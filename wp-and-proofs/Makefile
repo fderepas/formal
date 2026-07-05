@@ -11,4 +11,4 @@ verify:
 	@sh verify.sh
 
 clean:
-	rm -f *.vo *.vok *.vos *.glob .*.aux *~
+	rm -f *.vo *.vok *.vos *.glob .*.aux .lia.cache .nia.cache *~

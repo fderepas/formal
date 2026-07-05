@@ -6,7 +6,9 @@
   overflow, valid pointer) AND the functional lower bound `*r >= v`, whose
   correctness rests on the bitwise fact `x & (a-1) <= a-1` -- and the SMT solvers
   (Alt-Ergo, Z3) discharge ALL of them automatically.  No human proof needed.
-  (The function is extracted verbatim from peimage's PE-image loader.)
+
+  `align_up_pow2` is everyday bit-twiddling: rounding a value up to a power-of-two
+  boundary, as allocators, loaders, and filesystems do.
 */
 
 #include <stdint.h>

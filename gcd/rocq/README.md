@@ -85,4 +85,4 @@ Rocq → C story; it just isn't available in this environment.
 |---|---|---|
 | **Lean** (`../lean/`) | correct-by-construction, then extract | **C** (built in) |
 | **Rocq** (here) | correct-by-construction, then extract | **OCaml** (C needs CertiCoq) |
-| **Frama-C/WP** (`../../peimage/`, `../../snapd-analysis-acsl/`) | verify existing C after the fact | C is the *input* |
+| **Frama-C/WP** ([`../../wp-and-proofs/`](../../wp-and-proofs/README.md)) | verify existing C after the fact | C is the *input* |

@@ -25,7 +25,7 @@ if coqc sum_closed.v >/dev/null 2>&1; then
 else
   echo "      sum_closed.v: coqc FAILED"
 fi
-rm -f sum_closed.vo sum_closed.vok sum_closed.vos sum_closed.glob .sum_closed.aux
+rm -f sum_closed.vo sum_closed.vok sum_closed.vos sum_closed.glob .sum_closed.aux .lia.cache .nia.cache
 
 echo
 echo "Bulk of the work: automatic.  The one inductive fact: an interactive prover."

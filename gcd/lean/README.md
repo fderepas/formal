@@ -86,11 +86,11 @@ leanc Gcd.c -o gcd_demo  # 3. compile the generated C to a native binary
 `gcd_demo` and any `*.o`/`*.olean` are build artifacts (not kept here); `Gcd.c`
 regenerates from `Gcd.lean` at step 2.
 
-## Contrast with the Frama-C work in this repo
+## Contrast: correct-by-construction vs verify-after-the-fact
 
-Both routes deliver machine-checked guarantees, from opposite directions:
+Both deliver machine-checked guarantees, from opposite directions:
 - **Lean (here):** *correct-by-construction* — you write the algorithm inside a
   proof assistant that refuses non-total or unproven code, then extract C.
-- **Frama-C/WP (e.g. `peimage/`, `snapd-analysis-acsl/`):** *verify-after-the-fact*
-  — you take existing C and prove ACSL contracts (RTE-freedom, functional
-  properties) about it with WP + SMT/Coq.
+- **Frama-C/WP** (see [`../../wp-and-proofs/`](../../wp-and-proofs/README.md)):
+  *verify-after-the-fact* — you take existing C and prove ACSL contracts
+  (run-time-error freedom, functional properties) about it with WP + SMT/Coq.
